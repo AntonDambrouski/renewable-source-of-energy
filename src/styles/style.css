@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+}
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navMenu div {
+  width: 150px;
+}
