@@ -1,7 +1,18 @@
+@font-face {
+  font-family: gil-Ultralight; /* Гарнитура шрифта */
+  src: url(../../fonts/Gilroy-UltraLight.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: gil-Regular;
+  src: url(../../fonts/Gilroy-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: gil-Regular;
 }
 
 nav {
@@ -82,7 +93,7 @@ main {
 #aboutEnergyBlock {
   display: flex;
   flex-direction: column;
-  background-color: rgb(38, 94, 237, 0.93);
+  background-color: rgb(101, 140, 247, 0.97);
   padding-top: 40px;
   z-index: 0;
 }
@@ -90,12 +101,13 @@ main {
 .descriptionOfEnergy {
   display: flex;
   justify-content: space-between;
-  margin: 30px 30px 30px 30px;
+  margin: 30px 50px 30px 30px;
 }
 
 .textAboutEnergy > h1,
 h2 {
-  color: rgb(150, 237, 14, 0.93);
+  color: rgb(247, 199, 77, 0.97);
+
   text-shadow: black 1px 1px;
   margin: 20px 0px;
 }
@@ -106,7 +118,7 @@ h2 {
 
 .textAboutEnergy p,
 ul {
-  color: rgb(150, 237, 14, 0.93);
+  color: rgb(247, 199, 77, 0.97);
   text-indent: 30px;
   font-size: 16pt;
 }
@@ -131,7 +143,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px;
+  padding: 75px 0px;
   background: url(../../img/video_background.jpg) center no-repeat fixed;
 }
 
@@ -140,8 +152,86 @@ ul {
   margin-bottom: 20px;
 }
 
-.compareEnergyBlock {
+#compareEnergyBlock {
   display: flex;
-  height: 1000px;
-  background-color: rgba(51, 43, 168, 0.6);
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  padding-top: 75px;
+  background-color: rgb(101, 140, 247, 0.97);
+}
+
+#compareEnergyBlock table {
+  width: 600px;
+  border: rgb(247, 126, 167, 0.97) 1px solid;
+  border-spacing: 0px;
+  font-size: 16pt;
+  margin: 30px 0px;
+}
+
+td {
+  padding: 20px;
+}
+
+#compareEnergyBlock thead,
+th {
+  background-color: rgb(247, 126, 167, 0.97);
+}
+
+#compareEnergyBlock tbody,
+th,
+thead,
+tr,
+td {
+  border: inherit;
+}
+
+#compareEnergyBlock h1 {
+  color: rgb(247, 199, 77, 0.97);
+}
+
+#compareEnergyBlock p {
+  text-indent: 30px;
+  margin: 0px 30px;
+  font-size: 16pt;
+  padding: 10px;
+  border: rgb(247, 126, 167, 0.97) 3px solid;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(89, 247, 103, 0.97);
+}
+
+.links {
+  display: flex;
+  margin: 10px 50px;
+}
+
+.links img {
+  width: 40px;
+  filter: grayscale(100%);
+  margin: 0px 15px;
+}
+
+.links img:hover {
+  filter: none;
+  transition: 1s;
+}
+
+.zoom {
+  transition: all 0.7s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.rotate {
+  transition: all 1s;
+}
+
+.rotate:hover {
+  transform: rotate(360deg);
 }

@@ -11,7 +11,7 @@
   <body>
     <nav>
       <div class="imgLogo">
-        <img src="img/favicon.png" alt="logo" />
+        <img src="img/favicon.png" alt="logo" class="rotate" />
       </div>
       <div class="navMenu">
         <div>
@@ -21,10 +21,7 @@
           <span><a href="#videoAboutEnergy">Видео</a></span>
         </div>
         <div>
-          <span><a href="#">Сравнение</a></span>
-        </div>
-        <div>
-          <span><a href="#">Дополнительные ресурсы</a></span>
+          <span><a href="#compareEnergyBlock">Сравнение</a></span>
         </div>
       </div>
     </nav>
@@ -95,11 +92,16 @@
             <br />
           </div>
           <div class="blockOfImgs">
-            <img src="img/windmil.jpg" alt="" />
-            <img src="img/Wind-turbines.jpg" alt="" />
-            <img src="img/solar_panels.jpg" alt="" /><img
+            <img src="img/windmil.jpg" alt="ветряки" class="zoom" />
+            <img src="img/Wind-turbines.jpg" alt="ветряки" class="zoom" />
+            <img
+              src="img/solar_panels.jpg"
+              alt="солнечные батареи"
+              class="zoom"
+            /><img
               src="img/HydroElectricPowerPlant.jpg"
-              alt=""
+              alt="ГЭС"
+              class="zoom"
             />
           </div>
         </div>
@@ -109,12 +111,81 @@
         <h1>Видео про альтернативные источники энергии:</h1>
         <video
           width="600px"
-          src="#"
+          src="video/sourceOfEnergy.mp4"
           controls="controls"
-          poster="img/favicon.png"
         ></video>
       </div>
-      <div class="compareEnergyBlock"></div>
+      <div id="compareEnergyBlock">
+        <h1>Плюсы и минусы альтернативных источников энергии:</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Плюсы</th>
+              <th>Минусы</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Возобновляемость</td>
+              <td>
+                Непостоянство, зависимость от погодных условий и времени суток.
+              </td>
+            </tr>
+            <tr>
+              <td>Экологический аспект.</td>
+              <td>
+                Невысокий коэффициент полезного действия (за исключение водных
+                источников энергии).
+              </td>
+            </tr>
+            <tr>
+              <td>Широкое распространение, доступность.</td>
+              <td>Высокая стоимость</td>
+            </tr>
+            <tr>
+              <td>
+                Низкая себестоимость производства энергии в обозримом будущем.
+              </td>
+              <td>Недостаточная единичная мощность установок.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Таким образом, альтернативные источники энергии сейчас приобритают всё
+          большую популярность и на то есть несколько причин. Одним из главных
+          преимуществ таких источников - они экологически-безопасные, то есть не
+          выделяют вредных веществ в атмосферу, следовательно не загрязняют её.
+          Второе большое преимущество - неисчерпаемость, большинство способов
+          получения энергии заложены на использовании исчерпаемых ресурсов
+          (нефть, уголь и тд.), в то время как добыча энергии из альтернативных
+          источников подразумевает получение энергии из постоянно происходящих в
+          окружающей среде процессов или возобновляемых органических ресурсов и
+          предоставлении для технического применения. Стоит отметить, что
+          сегодня стоимость оборудования довольно велика, а также количество
+          получаемой энергии сильно зависит от погодных условий. Я считаю, что
+          это вопрос времени, когда добыча из альтернативных источников станет
+          для нас обычным делом, потому что преимущества, которые мы получаем
+          при использовании такой энергии гораздо больше, нежели недостатки.
+        </p>
+      </div>
     </main>
+    <footer>
+      <div class="contactMe">
+        <div class="links">
+          <a href="https://www.instagram.com/anton_prog.j" target="_blank"
+            ><img src="img/instagram.png" alt="inst:"
+          /></a>
+          <a href="https://github.com/AntonLiveAche" target="_blank"
+            ><img src="img/github.png" alt="gitHub:"
+          /></a>
+          <a href="https://vk.com/anton_prog_j" target="_blank"
+            ><img src="img/vk.png" alt="vk:"
+          /></a>
+        </div>
+        <div class="reserved">
+          <h4>@2021 - 2025 anton_prog.j. Все права защищены</h4>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
