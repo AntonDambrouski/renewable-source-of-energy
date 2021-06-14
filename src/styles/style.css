@@ -142,7 +142,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0px;
+  height: 100vh;
   background: url(../../img/video_background.jpg) center no-repeat fixed;
 }
 
